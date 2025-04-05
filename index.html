@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="weather app for international country and other search city name and submit button and show result. make by frontend doveloper student of tech altum Gaurav sharma.">
+    <title>Weather app project</title>
+    <!-- fontawesome link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        integrity="sha512-i8+QythOYyQke6XbStjt9T4yQHhhM+9Y9yTY1fOxoDQwsQpKMEpIoSQZ8mVomtnVCf9PBvoQDnKl06gGOOD19Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='screen'">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' media="print" onload="this.media='screen'">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+                <div class="weather">
+                    <h1>Weather App gggg</h1>
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <form action="/" class="d-flex align-items-center justify-content-between">
+                                <div class="input">
+                                    <label class="l-1">
+                                        <input type="search" placeholder="Enter Your City" autocomplete="off" required
+                                            id="input_txt">
+                                    </label>
+                                </div>
+                                <div class="icon_cont">
+                                    <button class="btn icon" type="submit" aria-label="search_button">
+                                        <span class="fa fa-search"></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12">
+                            <div class="image">
+                                <img src="img/clear-removebg-preview.png" alt="weather" id="image" loading="lazy">
+                            </div>
+                        </div>
+                        <div id="weather_data" class="col-12">
+                            <div class="gap py-3 text-center">
+                                <h2 class="h-2" id="city_name"> </h2>
+                            </div>
+                            <div class="row align-items-center">
+                            <div class="col-6 col-p-12 gap text-center">
+                                <p id="desc">Description -</p>
+                            </div>
+                            <div class="col-6 col-p-12 gap text-center">
+                                <p id="humidity">Humidity -</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-6 gap d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-temperature-high t"></i>
+                                <p id="temp">Temp -</p>
+                            </div>
+                            <div class="col-6 gap d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-wind w"></i>
+                                <p id="wind">Wind-</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="not-found-Location" class="col-12">
+                            <h2>Sorry, Location not found!!!</h2>
+                            <img src="img/40r-err-removebg-preview.png" alt="404 error" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+        <script src="js/script.js"></script>
+
+        <script src="https://kit.fontawesome.com/a7220980ba.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
